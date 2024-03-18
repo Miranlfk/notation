@@ -14,12 +14,10 @@
 name: release-github
 
 on:
-  push:
-    tags:
-      - v*
+  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
